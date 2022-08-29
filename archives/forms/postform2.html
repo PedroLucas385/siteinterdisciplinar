@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IFMG Bambuí Achados e Perdidos</title>
+    <link rel="stylesheet" href="header.css">
+    <link href="/assets/icon.png" rel="icon">
+</head>
+
+<body>
+    <header>
+        <a href="/archives/landpage/index.html" class="link">
+        <div id="div-link">
+            <h1><span>IFMG</h1></span>
+            <h1>Bambuí</h1>
+        </div>
+        </a>
+
+        <ul class="menu">
+            <a href="/archives/header/about.html"><li>Sobre</li></a>
+            <a href="/archives/header/lost-objects.html"><li>Objetos Aceitos</li></a>
+            <a href="/archives/header/actuation-areas.html"><li>Áreas de Atuação</li></a>
+         </ul>
+
+    </header>
+
+    <main>
+        <script>
+            function Enviar () {
+            var nome = document.getElementById("nome").value;
+			var idade = document.getElementById("idade").value;
+			var peso = document.getElementById("peso").value;
+			var altura = document.getElementById("altura").value;
+			var sexo = document.getElementById("sexo").value;
+ 
+			if(nome.length < 6 || nome.length > 30)
+				alert('Tamanho do nome invalido');
+			else{
+				if(idade <= 0 || idade >=100)
+					alert('Idade invalida');
+				else{
+					if(peso <= 0)
+						alert('Peso invalido');
+					else{
+						if(altura <= 0)
+							alert('Altura invalida');
+						else{
+								alert('Cadastro realizado com sucesso\nNome: '+nome + '\nIdade: '+idade+ '\nPeso: '+peso + '\nAltura: '+altura + '\nSexo: '+sexo);
+            }
+         }
+        }
+    }
+} 
+        </script>
+    </main>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IFMG Bambuí Achados e Perdidos</title>
+    <link rel="stylesheet" href="forms.css">
+    <link href="/assets/icon.png" rel="icon">
+</head>
+
+<body>
+    <header>
+        <a href="/archives/landpage/index.html" class="link">
+        <div id="div-link">
+            <h1><span>IFMG</h1></span>
+            <h1>Bambuí</h1>
+        </div>
+        </a>
+
+        <ul class="menu">
+            <a href="/archives/header/about.html"><li>Sobre</li></a>
+            <a href="/archives/header/lost-objects.html"><li>Objetos Aceitos</li></a>
+            <a href="/archives/header/actuation-areas.html"><li>Áreas de Atuação</li></a>
+         </ul>
+
+    </header>
+    
+    <main>
+        <aside>
+            <h2>Formulário para registrar pertence perdido.</h2>
+            <h2><span>Preencha os campos abaixo conforme <br> as características do item perdido:</span></h2>
+
+            <form name="input" action="" method="get">
+                <input type="text" placeholder="Nome Usuário"><br>
+                <input type="text" placeholder="Condição Em Que Foi Encontrado"><br>
+                <select name="locals" id="Locais">
+                    <option selected disabled>Local Encontrado</option>
+                    <option value="Bloco A">Bloco A</option>
+                    <option value="Biblioteca"> Biblioteca</option>
+                    <option value="Restaurante">Restaurante</option>
+                    <option value="Laboratório">Laboratório</option>
+                    <option value="Moradia">Moradia Estudantil</option>
+                    <option value="Estojo">Poliesportivo</option>
+                    <option value="Teatro Aberto">Centro S. De Esportes e Cultura</option>
+                </select>
+                <select name="objects" id="objects">
+                    <option selected disabled>Objeto Perdido</option>
+                    <option value="Carteirinha">Carteira Estudantil</option>
+                    <option value="Bone">Boné</option>
+                    <option value="Celular">Celular</option>
+                    <option value="Oculos">Óculos</option>
+                    <option value="Chave">Chave</option>
+                    <option value="Estojo">Estojo</option>
+                    <option value="Roupas">Roupas</option>
+                </select>
+                <input type="submit" placeholder="Enviar">
+            </form>
+
+            <script>
+                function Enviar () {
+                var nome = document.getElementById('name').value;
+                var mês = document.getElementById('month').value;
+                var cor = document.getElementById('color').value;
+                var objeto = document.getElementById('objects').value;
+     
+                if(nome.length < 6 || nome.length > 30)
+                    alert('Tamanho do nome invalido');
+                else{
+                    if(mês.length <= 0 || mês.length > 2)
+                        alert('Mês invalido');
+                    else{
+                        if(color.length <= 0)
+                            alert('Cor invalida');
+                                else {
+                                    alert('Cadastro do objeto' + objeto, 'feito no sistema!');
+                  }
+                }
+             }
+        }
+        </script>
+        </aside>
+    </main>
+</body>
+</html>
